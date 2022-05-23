@@ -16,7 +16,7 @@ public class App
         buildProductList();
         ClientHandler ch = new ClientHandler();
         //inizializzazione
-        System.out.println("Server Started...");
+        System.out.println("Server Partito...");
         ServerSocket serverSocket = null;
         //inizializzo serversocket
         try {
@@ -27,11 +27,11 @@ public class App
         while (true) {
             //inizializzo clientsocket e la connessione
 
-            System.out.println("Accepting client...");
+            System.out.println("In attesa di un Client...");
             try {
                 assert serverSocket != null;
                 clientSocket = serverSocket.accept();
-                System.out.println("Client Accepted");
+                System.out.println("Client Accettato");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -41,8 +41,8 @@ public class App
             ch.processl();
             try {
                 clientSocket.close();
-                System.out.println("...Client quit...");
-                System.out.println("Server restarting...");
+                System.out.println("...Il Client ha terminato la connesisone...");
+                System.out.println("Server in Riavvio...");
             } catch (IOException e) {
                 e.printStackTrace();
             }

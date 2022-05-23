@@ -39,10 +39,10 @@ public class ClientHandler {
     public static void processl(){
         try {
             out.println("BENVENUTO CLIENT");
-            out.println("\nQuesta è la lista di comandi che puoi digitare :");
+            out.println("\nQuesta e' la lista di comandi che puoi digitare :");
             out.println("all -> per la lista di tutti i piatti presenti nel database");
             out.println("all_sorted -> per la lista di tutti i piatti presenti nel database in ordinamento AB");
-            out.println("more_expensive -> per il piatto più costoso presente nel database");
+            out.println("more_expensive -> per il piatto piu' costoso presente nel database");
             String s;
             while ((s = in.readLine()) != null)  {
                 System.out.println("Ricevuto : "+s);
