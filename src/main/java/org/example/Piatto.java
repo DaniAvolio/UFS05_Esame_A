@@ -13,9 +13,6 @@ public class Piatto {
         this.descrizione = descrizione;
     }
 
-    public int getId() {
-        return id;
-    }
 
     public String getNome() {
         return nome;
@@ -25,7 +22,4 @@ public class Piatto {
         return prezzo;
     }
 
-    public String getDescrizione() {
-        return descrizione;
-    }
 }
